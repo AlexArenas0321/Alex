@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name - Homepage</title>
+    <link href="Project.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a class="navbar-brand" href="index.html">
+            <img src="CompanyName_Logo.svg"Company Logo">
+        </a>
+        <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+        <div class="navbar-nav">
+            <a class="nav-link" href="PPj.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="product.html">Products/Services</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <h1>Welcome to Company Name</h1>
+            <p>Your satisfaction is our priority.</p>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2>Our Business</h2>
+        <p>Company Name is a leading provider of high-quality products and services in the Philippines.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved. | <small>For educational purposes only.</small></p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar-toggler').classList.toggle('active');
+            document.querySelector('.navbar-nav').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

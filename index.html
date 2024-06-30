@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Name - Homepage</title>
-    <link href="Project.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel='stylesheet'>
+    <title>Miento's Alex - Home</title>
 </head>
 <body>
-    <nav>
-        <a class="navbar-brand" href="index.html">
-            <img src="CompanyName_Logo.svg"Company Logo">
-        </a>
-        <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
-        <div class="navbar-nav">
-            <a class="nav-link" href="PPj.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="product.html">Products/Services</a>
+    <header>
+        <div class="img-container">
+            <a href="Copy.html" class="logo">
+                <img src="CompanyName_Logo.svg" alt="Miento's Alex">
+            </a>
         </div>
-    </nav>
-    <div class="hero">
-        <div class="container">
-            <h1>Welcome to Company Name</h1>
-            <p>Your satisfaction is our priority.</p>
-        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About US.html">About Us</a></li>
+            <li><a href="products.html">Menu</a></li>
+            <li><a href="review.html#reviews">Reviews</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Welcome to <br>Miento's Alex!!!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam praesentium adipisci earum.
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam praesentium adipisci earum.
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam praesentium adipisci earum.<br><br></p>
+                <a href="products.html" class="btn">Check our Menu</a>
+            </div>
+            <div class="home-img">
+                <img src="CompanyName_Logo.svg" alt="">
+            </div>
+         </section>
+    </main>
+
+    <div class="copyright">
+        <p>&#169; Miento's Alex All Right Reserved | <small>For educational purposes only.</small></p>
     </div>
-    <div class="container mt-5">
-        <h2>Our Business</h2>
-        <p>Company Name is a leading provider of high-quality products and services in the Philippines.</p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Company Name. All rights reserved. | <small>For educational purposes only.</small></p>
-    </footer>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.navbar-toggler').classList.toggle('active');
-            document.querySelector('.navbar-nav').classList.toggle('active');
-        }
-    </script>
+
+    <script src="index.js"></script>
 </body>
 </html>
